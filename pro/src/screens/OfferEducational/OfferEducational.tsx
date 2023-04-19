@@ -22,8 +22,8 @@ import { computeInitialValuesFromOffer } from 'core/OfferEducational/utils/compu
 import { computeURLCollectiveOfferId } from 'core/OfferEducational/utils/computeURLCollectiveOfferId'
 import { SelectOption } from 'custom_types/form'
 import useNotification from 'hooks/useNotification'
-import { patchCollectiveOfferTemplateAdapter } from 'pages/CollectiveOfferEdition/adapters/patchCollectiveOfferTemplateAdapter'
-import { queryParamsFromOfferer } from 'pages/Offers/utils/queryParamsFromOfferer'
+import { patchCollectiveOfferTemplateAdapter } from 'oldpages/CollectiveOfferEdition/adapters/patchCollectiveOfferTemplateAdapter'
+import { queryParamsFromOfferer } from 'oldpages/Offers/utils/queryParamsFromOfferer'
 
 import styles from './OfferEducational.module.scss'
 import OfferEducationalForm from './OfferEducationalForm'

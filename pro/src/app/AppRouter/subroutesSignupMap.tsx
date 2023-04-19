@@ -2,9 +2,9 @@
 /* istanbul ignore file */
 import React from 'react'
 
-import SignupConfirmation from 'pages/Signup/SignupConfirmation/SignupConfirmation'
-import SignupContainer from 'pages/Signup/SignupContainer/SignupContainer'
-import SignUpValidation from 'pages/Signup/SignUpValidation'
+import SignupConfirmation from 'oldpages/Signup/SignupConfirmation/SignupConfirmation'
+import SignupContainer from 'oldpages/Signup/SignupContainer/SignupContainer'
+import SignUpValidation from 'oldpages/Signup/SignUpValidation'
 
 import type { IRoute } from './routesMap'
 

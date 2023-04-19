@@ -12,7 +12,7 @@ import App from 'app/App/App'
 import AppLayout from 'app/AppLayout'
 import { IRoute } from 'app/AppRouter/routesMap'
 import useCurrentUser from 'hooks/useCurrentUser'
-import NotFound from 'pages/Errors/NotFound/NotFound'
+import NotFound from 'oldpages/Errors/NotFound/NotFound'
 import { selectActiveFeatures } from 'store/features/selectors'
 import { dehumanizedRoute } from 'utils/dehumanize'
 

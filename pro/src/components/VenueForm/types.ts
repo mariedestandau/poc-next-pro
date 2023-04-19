@@ -1,5 +1,5 @@
 import { IAccessibiltyFormValues } from 'core/shared'
-import { IVenueBannerMetaProps } from 'pages/Offerers/Offerer/VenueV1/VenueEdition/ImageVenueUploaderSection/ImageVenueUploaderSection'
+import { IVenueBannerMetaProps } from 'oldpages/Offerers/Offerer/VenueV1/VenueEdition/ImageVenueUploaderSection/ImageVenueUploaderSection'
 
 export interface IVenueFormValues {
   reimbursementPointId: number | null

@@ -8,7 +8,7 @@
 
 ## [REPOSITORY](./repository/README.md)
 
-## [PAGES](./pages/README.md)
+## [PAGES](./oldpages/README.md)
 
 ## Architecture générale :
 

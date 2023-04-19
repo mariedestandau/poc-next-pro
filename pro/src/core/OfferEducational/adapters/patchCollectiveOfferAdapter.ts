@@ -5,7 +5,7 @@ import {
   IOfferEducationalFormValues,
 } from 'core/OfferEducational'
 
-import { createPatchOfferPayload } from '../../../pages/CollectiveOfferEdition/utils/createPatchOfferPayload'
+import { createPatchOfferPayload } from '../../../oldpages/CollectiveOfferEdition/utils/createPatchOfferPayload'
 
 type Params = {
   offerId: string

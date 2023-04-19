@@ -2,11 +2,11 @@
 /* istanbul ignore file */
 import React from 'react'
 
-import { Confirmation } from 'pages/OfferIndividualWizard/Confirmation'
-import { Offer } from 'pages/OfferIndividualWizard/Offer'
-import { PriceCategories } from 'pages/OfferIndividualWizard/PriceCategories'
-import { Stocks } from 'pages/OfferIndividualWizard/Stocks'
-import { Summary } from 'pages/OfferIndividualWizard/Summary'
+import { Confirmation } from 'oldpages/OfferIndividualWizard/Confirmation'
+import { Offer } from 'oldpages/OfferIndividualWizard/Offer'
+import { PriceCategories } from 'oldpages/OfferIndividualWizard/PriceCategories'
+import { Stocks } from 'oldpages/OfferIndividualWizard/Stocks'
+import { Summary } from 'oldpages/OfferIndividualWizard/Summary'
 
 import type { IRoute } from './routesMap'
 
