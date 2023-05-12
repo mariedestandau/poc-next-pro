@@ -3,9 +3,8 @@ import { API_URL } from 'utils/config'
 import { AppClientAdage } from './adage/AppClientAdage'
 import { AppClient, OpenAPIConfig } from './v1'
 import { AppClientV2 } from './v2'
-
-const params = new URLSearchParams(window.location.search)
-const token = params.get('token')
+let params
+let token
 
 const config: OpenAPIConfig = {
   BASE: API_URL,
