@@ -38,6 +38,7 @@ export const useConfigureFirebase = (currentUserId: string | undefined) => {
   useEffect(() => {
     if (!app && isFirebaseSupported) {
       const initializeApp = firebase.initializeApp(firebaseConfig)
+      if (!initializeApp) return
       setApp(initializeApp)
       isFirebaseSupported &&
         initializeAnalytics(initializeApp, {
