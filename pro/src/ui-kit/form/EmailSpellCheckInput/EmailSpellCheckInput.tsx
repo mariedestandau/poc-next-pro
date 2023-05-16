@@ -9,9 +9,8 @@ import { TextInput } from 'ui-kit/form/index'
 
 import styles from './EmailSpellCheckInput.module.scss'
 
-export interface IEmailSpellCheckInputProps<FormType> {
-  // `Extract` needed so the key is a string. See https://stackoverflow.com/a/51808262
-  name: Extract<keyof FormType, string>
+export interface IEmailSpellCheckInputProps {
+  name: string
   placeholder: string
   label: string
   overrideInitialTip?: string | null
@@ -22,7 +21,7 @@ const EmailSpellCheckInput = <FormType,>({
   placeholder,
   label,
   overrideInitialTip = null,
-}: IEmailSpellCheckInputProps<FormType>): JSX.Element => {
+}: IEmailSpellCheckInputProps): JSX.Element => {
   const { setFieldValue, setFieldTouched } = useFormikContext<FormType>()
   const [field, meta] = useField<string>(name)
   const [emailValidationTip, setEmailValidationTip] = useState<string | null>(
