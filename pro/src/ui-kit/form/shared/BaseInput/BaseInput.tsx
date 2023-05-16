@@ -8,8 +8,8 @@ interface IBaseInputProps
   className?: string
   hasError?: boolean
   filterVariant?: boolean
-  rightIcon?: () => JSX.Element | null
-  rightButton?: () => JSX.Element
+  rightIcon?: JSX.Element | null
+  rightButton?: JSX.Element | null
 }
 
 const BaseInput = forwardRef(
@@ -25,48 +25,18 @@ const BaseInput = forwardRef(
     }: IBaseInputProps,
     ref: ForwardedRef<HTMLInputElement>
   ): JSX.Element => {
-    if (rightIcon || rightButton) {
-      const hasIcon = !!rightIcon
-      const hasButton = !!rightButton
+    const hasIcon = !!rightIcon
+    const hasButton = !!rightButton
 
-      return (
-        <div className={styles['base-input-wrapper']}>
-          <input
-            {...props}
-            aria-invalid={hasError}
-            {...(hasError ? { 'aria-describedby': `error-${name}` } : {})}
-            className={cn(
-              styles['base-input'],
-              styles['base-input-with-right-icon'],
-              {
-                [styles['has-error']]: hasError,
-                [styles['filter-variant']]: filterVariant,
-              },
-              className
-            )}
-            id={name}
-            name={name}
-            ref={ref}
-          />
-          <span
-            className={cn({
-              [styles['base-input-right-icon']]: hasIcon,
-              [styles['base-input-right-button']]: hasButton,
-              [styles['filter-variant']]: filterVariant,
-            })}
-          >
-            {hasIcon ? rightIcon() : hasButton && rightButton()}
-          </span>
-        </div>
-      )
-    } else {
-      return (
+    return rightIcon || rightButton ? (
+      <div className={styles['base-input-wrapper']}>
         <input
           {...props}
           aria-invalid={hasError}
           {...(hasError ? { 'aria-describedby': `error-${name}` } : {})}
           className={cn(
             styles['base-input'],
+            styles['base-input-with-right-icon'],
             {
               [styles['has-error']]: hasError,
               [styles['filter-variant']]: filterVariant,
@@ -77,9 +47,37 @@ const BaseInput = forwardRef(
           name={name}
           ref={ref}
         />
-      )
-    }
+        <span
+          className={cn({
+            [styles['base-input-right-icon']]: hasIcon,
+            [styles['base-input-right-button']]: hasButton,
+            [styles['filter-variant']]: filterVariant,
+          })}
+        >
+          {hasIcon && rightIcon}
+          {hasButton && rightButton}
+        </span>
+      </div>
+    ) : (
+      <input
+        {...props}
+        aria-invalid={hasError}
+        {...(hasError ? { 'aria-describedby': `error-${name}` } : {})}
+        className={cn(
+          styles['base-input'],
+          {
+            [styles['has-error']]: hasError,
+            [styles['filter-variant']]: filterVariant,
+          },
+          className
+        )}
+        id={name}
+        name={name}
+        ref={ref}
+      />
+    )
   }
 )
-BaseInput.displayName = 'BaseInput'
+
+//BaseInput.displayName = 'BaseInput'
 export default BaseInput

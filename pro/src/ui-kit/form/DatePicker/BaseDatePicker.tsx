@@ -6,7 +6,7 @@ import type { ReactDatePickerProps } from 'react-datepicker'
 import { CalendarIcon } from 'icons'
 import { FORMAT_DD_MM_YYYY } from 'utils/date'
 
-import { BaseInput } from '../shared'
+import BaseInput from '../shared/BaseInput'
 
 registerLocale('fr', fr)
 
@@ -27,7 +27,7 @@ export const BaseDatePicker = ({
       {...props}
       customInput={
         <BaseInput
-          rightIcon={() => <CalendarIcon />}
+          rightIcon={<CalendarIcon />}
           hasError={hasError}
           filterVariant={filterVariant}
           ref={ref}

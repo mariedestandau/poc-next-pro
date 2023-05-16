@@ -46,12 +46,6 @@ const BannerLayout = ({
         className
       )}
     >
-      {type === 'notification-info' && showTitle && (
-        <BulbIcon className={styles['icon']} />
-      )}
-      {type === 'attention' && showTitle && (
-        <AttentionIcon className={styles['icon']} />
-      )}
       <span className={styles['border-cut']}>
         {closable && (
           <button onClick={handleOnClick} type="button">
