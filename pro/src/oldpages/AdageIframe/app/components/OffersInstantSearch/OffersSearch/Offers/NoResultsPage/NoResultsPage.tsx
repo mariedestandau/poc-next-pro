@@ -1,5 +1,3 @@
-import './NoResultsPage.scss'
-
 import React, { useContext } from 'react'
 
 import { ReactComponent as SearchGrayIcon } from 'icons/ico-search-gray.svg'

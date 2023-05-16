@@ -1,5 +1,3 @@
-import './OfferSummary.scss'
-
 import React from 'react'
 
 import { OfferAddressType } from 'apiClient/adage'

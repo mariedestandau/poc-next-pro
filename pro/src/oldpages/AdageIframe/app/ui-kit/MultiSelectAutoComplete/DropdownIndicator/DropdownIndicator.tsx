@@ -6,8 +6,6 @@ import type { DropdownIndicatorProps } from 'react-select'
 import { ReactComponent as ChevronIconAdage } from 'icons/ico-chevron-adage.svg'
 import { Option } from 'oldpages/AdageIframe/app/types'
 
-import './DropdownIndicator.scss'
-
 const DropdownIndicator = <T,>(
   props: DropdownIndicatorProps<Option<T>>
 ): JSX.Element => (

@@ -9,7 +9,6 @@ import {
   NotificationComponent,
   NotificationType,
 } from 'oldpages/AdageIframe/app/components/Layout/Notification/Notification'
-import './PrebookingButton.scss'
 import { logOfferConversion } from 'oldpages/AdageIframe/libs/initAlgoliaAnalytics'
 import { Button } from 'ui-kit'
 import { LOGS_DATA } from 'utils/config'

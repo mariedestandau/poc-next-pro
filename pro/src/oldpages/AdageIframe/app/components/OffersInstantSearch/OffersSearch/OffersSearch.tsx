@@ -1,5 +1,3 @@
-import './OffersSearch.scss'
-
 import { useEffect, useContext, useState, useCallback } from 'react'
 import * as React from 'react'
 import type { SearchBoxProvided } from 'react-instantsearch-core'

@@ -1,4 +1,3 @@
-import './SearchBox.scss'
 import React, { useCallback, useContext } from 'react'
 import type { SearchBoxProvided } from 'react-instantsearch-core'
 
