@@ -27,9 +27,7 @@
   }
 
   /* override cursor: default defined by browser */
-  label,
-  .label,
-  input[type="checkbox"] {
+  .label {
     cursor: pointer;
   }
 
